@@ -1,0 +1,7 @@
+{
+  "@@locale": "en",
+  "scannerPageTitle": "Enter card",
+  "scannerPageChangeLanguageButton": "EN",
+  "scannerPageScanButton": "Scan a card",
+  "scannerPageSubmitButton": "Submit"
+}

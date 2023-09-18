@@ -1,0 +1,9 @@
+#include? "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug-staging.xcconfig"
+#include "Generated.xcconfig"
+
+ENVIRONMENT_PLIST = environments/staging/staging.plist
+APP_DISPLAY_NAME = Card Scanner STAG
+bundle_suffix=.stag
+CF_BUNDLE_URL_NAME=card_scannerstag.demo.com
+CF_BUNDLE_URL_SCHEME=demostagscheme
+
