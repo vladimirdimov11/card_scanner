@@ -1,0 +1,14 @@
+{
+  "@@locale": "bg",
+  "reload": "Презареди",
+  "ok": "добре",
+  "close": "Затвори",
+  "errorState": "Възникна грешка",
+  "loadingState": "Зарежда се...",
+  "tryAgain": "Опитайте отново",
+  "confirm": "Потвърдете",
+  "submit": "Изпращане",
+  "english": "английски",
+  "bulgarian": "български",
+  "changeLanguage": "Смени език"
+}

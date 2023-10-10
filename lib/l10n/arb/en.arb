@@ -1,0 +1,14 @@
+{
+  "@@locale": "en",
+  "reload": "Reload",
+  "ok": "OK",
+  "close": "Close",
+  "errorState": "Error occurred",
+  "loadingState": "Loading...",
+  "tryAgain": "Try again",
+  "confirm": "Confirm",
+  "submit": "Submit",
+  "english": "English",
+  "bulgarian": "Bulgarian",
+  "changeLanguage": "Change Language"
+}

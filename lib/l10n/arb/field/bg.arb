@@ -1,0 +1,8 @@
+{
+  "@@locale": "bg",
+  "cardNumber": "Номер",
+  "cardExpDate": "Дата на валидност",
+  "cardHolderName": "Картодържател",
+  "cardIssuer": "Издател",
+  "cardCVV": "CVV"
+}
