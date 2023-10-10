@@ -5,7 +5,6 @@
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
-import 'package:card_scanner/base/app/config/environment_config.dart';
 import 'package:card_scanner/base/common_services/card_service.dart';
 import 'package:card_scanner/base/repositories/card_repository.dart';
 import 'package:card_scanner/feature_scanner/blocs/scanner_bloc.dart';
@@ -33,7 +32,7 @@ void main() {
   late RouterBlocType routerBlocType;
 
   ScannerBloc scannerBloc() => ScannerBloc(
-        CardService(repo, EnvironmentConfig.development),
+        CardService(repo),
         cardValidationService,
         cardScannerService,
         routerBlocType,

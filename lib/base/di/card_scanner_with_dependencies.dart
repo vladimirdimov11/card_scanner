@@ -142,18 +142,20 @@ class _CardScannerWithDependenciesState
           create: (context) => PermissionsRepository(
             context.read(),
             context.read(),
+            context.read(),
           ),
         ),
         Provider<LanguageRepository>(
           create: (context) => LanguageRepository(
-            context.read<ErrorMapper>(),
-            context.read<LanguageLocalDataSource>(),
+            context.read(),
+            context.read(),
           ),
         ),
         Provider<CardRepository>(
           create: (context) => CardRepository(
-            context.read<ErrorMapper>(),
-            context.read<CardDataSource>(),
+            context.read(),
+            context.read(),
+            context.read(),
           ),
         ),
       ];
@@ -161,7 +163,6 @@ class _CardScannerWithDependenciesState
   List<Provider> get _services => [
         Provider<PermissionsService>(
           create: (context) => PermissionsService(
-            context.read(),
             context.read(),
           ),
         ),
@@ -177,7 +178,6 @@ class _CardScannerWithDependenciesState
         ),
         Provider<CardService>(
           create: (context) => CardService(
-            context.read(),
             context.read(),
           ),
         ),

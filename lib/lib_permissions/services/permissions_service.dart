@@ -5,15 +5,13 @@
 // license that can be found in the LICENSE file or at
 // https://opensource.org/licenses/MIT.
 
-import '../../base/app/config/environment_config.dart';
 import '../../base/models/errors/error_model.dart';
 import '../repositories/permissions_repository.dart';
 
 class PermissionsService {
-  PermissionsService(this._permissionsRepository, this._environmentConfig);
+  PermissionsService(this._permissionsRepository);
 
   final PermissionsRepository _permissionsRepository;
-  final EnvironmentConfig _environmentConfig;
 
   Map<String, bool> _permissionList = {};
 
@@ -59,16 +57,6 @@ class PermissionsService {
   /// source, otherwise it will try to return it from the cache if the cache is
   /// not empty.
   Future<Map<String, bool>> getPermissions({bool force = false}) async {
-    // don't "fetch" the data on development env
-    if (_environmentConfig == EnvironmentConfig.development) {
-      force = false;
-      _permissionList.addAll({
-        'ScannerRoute': true,
-        'SuccessRote': true,
-        'SplashRoute': true,
-      });
-    }
-
     if (_permissionList.isEmpty || force) {
       _permissionList = await _permissionsRepository.getPermissions();
     }

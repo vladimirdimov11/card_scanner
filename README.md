@@ -1,8 +1,13 @@
 # Overview
 
 This project is a huge overkill for as simple functionality as card scanning and editing. 
-It's meant for demonstration purpose on working with RxBloc and my former company architecture. Sorry for making you check so much code, but there were so many examples on how to do this task, that I choose to make some unique implementation.
-The base structure were generated with rx_bloc_cli pub. 
+It's meant for demonstration purpose on working with RxBloc and rx_bloc_cli.
+
+# Android output
+![Android](docs/android_screenshot.png)
+
+# iOS output
+![iOS](docs/ios_screenshot.png)
 
 ## Getting started
 
